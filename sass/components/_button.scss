@@ -15,8 +15,9 @@
     color: var(--rare-color);
 
     transition: background-color var(--time-hover);
-}
-.button:hover,
-.button:focus{
-    background-color: var(--btn-hover);
+    
+    &:hover,
+    &:focus{
+        background-color: var(--btn-hover);
+    }
 }

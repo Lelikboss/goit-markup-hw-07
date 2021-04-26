@@ -10,23 +10,26 @@
     border-radius: 4px;
 
     transition: border-color var(--time-hover);
+
+    &:focus{
+        outline: none;
+        border-color: var(--accent-color);
+    }
+    &:focus + .modal-form__icon{
+        fill: var(--accent-color);;
+    }
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus{
+        -webkit-text-fill-color: var(--complementary-color);
+        -webkit-box-shadow: 0 0 0px 1000px var(--rare-color) inset;
+    }
 }
-.modal-form__field:-webkit-autofill,
-.modal-form__field:-webkit-autofill:hover, 
-.modal-form__field:-webkit-autofill:focus{
-    -webkit-text-fill-color: var(--complementary-color);
-    -webkit-box-shadow: 0 0 0px 1000px var(--rare-color) inset;
-}
-.modal-form__field:focus{
-    outline: none;
-    border-color: var(--accent-color);
-}
+
 .modal-form__field + .modal-form__icon{
     transition: fill var(--time-hover);
 }
-.modal-form__field:focus + .modal-form__icon{
-    fill: var(--accent-color);
-}
+
 .modal-form__position {
     position: relative;
     margin-bottom: 10px;
@@ -60,6 +63,11 @@
     resize: none;
 
     transition: border-color var(--time-hover);
+
+    &:focus{
+        outline: none;
+        border-color: var(--accent-color);
+    }
 }
 .form__textarea{
     width: 448px;
@@ -72,10 +80,7 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
 }
-.modal-form__textarea-field:focus{
-    outline: none;
-    border-color: var(--accent-color);
-}
+
 .check{
     display: block;
     text-align: center;

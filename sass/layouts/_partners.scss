@@ -8,7 +8,12 @@
 }
 .partners__item-icon{
     fill: currentColor;
-    transition: fill var(--time-hover)
+    transition: fill var(--time-hover);
+    &:hover,
+    &:focus{
+        outline: none;
+        fill: var(--accent-color);
+    }
 }
 .partners__link{
     display: flex;
@@ -20,9 +25,4 @@
     border-radius: 4px;
     transition: color var(--time-hover);
     outline: none;
-}
-.partners__item-icon:hover,
-.partners__item-icon:focus{
-    outline: none;
-    fill: var(--accent-color);
 }

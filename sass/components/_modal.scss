@@ -57,11 +57,11 @@
     background-color: transparent;
 
     transition: background-color var(--time-hover), fill var(--time-hover);
-}
-.modal__btn-close:hover,
-.modal__btn-close:focus{
-    fill: var(--accent-color);
-    background-color: rgba(0, 0, 0, 0.1);
+
+    &:hover{
+        fill: var(--accent-color);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
 .modal__title{
     margin-bottom: 12px;
